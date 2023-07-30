@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.box-top {
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 1px 0 1px 0 white;
+}
+
+.box-links {
+    position: relative;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: white;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.check-box, .menu-btn {
+    display: none;
+}
+
+.home-page:hover, 
+.projects-page:hover, 
+.social-media-page:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.profile-box {
+    height: 100%;
+    width: 50px;
+    background-image: url(../img/pandin.png), linear-gradient(blue, blue, blue);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 30px;
+    transition: all 500ms;
+}
+
+.profile-box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px blue;
+}
+
+@media screen and (max-width:910px) {
+    .profile-box {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .box-top {
+        justify-content: end;
+    }
+
+    .menu-btn, .line {
+        display:block!important;
+    }
+
+    .menu-btn {
+        border: none;
+        position: absolute;
+        left: 5px;
+        top: 7px;
+        background-color: white;
+        width: 32px;
+        border-radius: 20%;
+        z-index: 1;
+        box-shadow: 2px 2px 0 0 rgba(255, 255, 255, 0.356);
+    }
+
+    .menu-btn:hover {
+       cursor: pointer;
+       box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.664);
+       margin-left: 2px;
+       margin-top: 2px;
+    }
+
+    .menu-btn .line {
+        height: 4px;
+        background-color: rgb(0, 89, 255);
+        margin: 5px 5px 5px 5px;
+    }
+
+    .line.one {
+        margin-top: 5px;
+    }
+
+    .line.three {
+        margin-bottom: 5px;
+    }
+
+    .box-links {
+        position: absolute;
+        margin: 0;
+        width: 100px;
+        padding: 20px 0 12px 0;
+        gap: 1rem;
+        height: fit-content;
+        display: block;
+        justify-content: left;
+        left: 0;
+        background: rgba(0, 0, 0, 0.11);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-bottom-right-radius: 20%;
+        backdrop-filter: blur(8.8px);
+        -webkit-backdrop-filter: blur(8.8px);
+        border: 1px solid rgba(3, 3, 3, 0.267);
+        left: -110px;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .home-page {
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .projects-page {
+        margin: 0.5rem 0 0.5rem 5px;
+    } 
+
+    .social-media-page {
+        margin-left: 5px;
+    }
+
+    .profile-box {
+        margin-right: 10px;
+    }
+}
