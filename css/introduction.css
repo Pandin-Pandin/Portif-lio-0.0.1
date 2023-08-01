@@ -1,6 +1,5 @@
 .first-big-box {
     border: none;
-    margin-top: 50px;
     height: 100vh;
     position: relative;
     display: flex;
@@ -8,8 +7,6 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
-    background-image: url('../img/bg-one.jpg');
-    background-size: cover;
 }
 
 .text-one-in {

@@ -6,7 +6,52 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-image: url('../img/universe-bg.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+.box-adjust {
+    height: 50px;
+}
+
+a.button-top {
+    text-decoration: none;
+}
+
+.button-top {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-top span {
+    font-size: 40px;
+    font-weight: 900;
+    color: blue;
+    animation: top-down 500ms infinite;
+}
+
+@keyframes top-down {
+    25% {
+        margin-top: 5px;
+    }
+
+    50% {
+        margin: 0;
+    }
+
+    75% {
+        margin-bottom: 5px;
+    }
 }
 
 .box-top {
