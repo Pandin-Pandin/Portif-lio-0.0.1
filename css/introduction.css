@@ -59,15 +59,14 @@
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     user-select: none;
     box-shadow: 3px 2px 1px 0 rgba(233, 233, 233, 0.356);
-    transition: all 200ms;
     border-radius: 5px;
 }
 
 .btn-projects:hover {
     cursor: pointer;
-    box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.664);
-    margin-left: 2px;
-    margin-top: 2px;
+    box-shadow: 0 0 0 0 rgba(233, 233, 233, 0.356), inset 1px 1px 2px 0 rgba(0, 0, 0, 0.664);
+    margin-left: 4px;
+    margin-top: 3px;
 }
 
 @media screen and (max-width:570px) {

@@ -1,3 +1,40 @@
 .second-big-box {
     height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box-projects {
+    margin-top: 60px;
+    color: white;
+    width: fit-content;
+    font-size: 2.9rem;
+    padding: 0.4rem;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 5px 0 0 gray;
+    border-radius: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: 100ms;
+}
+
+.title-box-projects:hover {
+    margin-top: 65px;
+    box-shadow: 0 0 0 0 gray;
+}
+
+@media screen and (max-width:910px) {
+    .title-box-projects {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .title-box-projects {
+        font-size: 1.7rem;
+    }
 }

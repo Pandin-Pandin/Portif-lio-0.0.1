@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     animation: rotate 3000ms infinite;
+    z-index: -1;
 }
 
 @keyframes rotate {
