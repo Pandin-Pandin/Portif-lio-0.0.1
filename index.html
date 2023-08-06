@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/introduction.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/graphic-element.css">
     <!-- GOOGLE ICONS/STYLES/FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Pandin's Portifolio</title>
 </head>
 <body>
+    <div class="graphic-element"></div>
     <div class="box-adjust" id="home"></div>
     <a href="#home" class="button-top">
         <span class="material-symbols-outlined arrow">
@@ -55,13 +57,60 @@
         </div>
     </div>
     <div class="second-big-box" id="projects">
-        <div class="title-box-projects">Projetos</div>
-        <div class="projects-box"></div>
+        <div class="title-box-projects">
+            <p>Projetos</p>
+        </div>
+        <div class="projects-box">
+            <div class="project-1">
+                <div class="title">Calculadora</div>
+                <div class="calculator dark">
+                    <div class="theme-toggler active">
+                        <i class="toggler-icon"></i>
+                    </div>
+                    <div class="display-screen">
+                        <div id="display" class="display dark"></div>
+                    </div>
+                    <div class="buttons">
+                        <table>
+                            <tr>
+                                <td><button class="btn-operator" id="clear">C</button></td>
+                                <td><button class="btn-operator" id="/">&divide;</button></td>
+                                <td><button class="btn-operator" id="*">&times;</button></td>
+                                <td><button class="btn-operator" id="backspace"><</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn-number" id="7">7</button></td>
+                                <td><button class="btn-number" id="8">8</button></td>
+                                <td><button class="btn-number" id="9">9</button></td>
+                                <td><button class="btn-operator" id="-">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn-number" id="4">4</button></td>
+                                <td><button class="btn-number" id="5">5</button></td>
+                                <td><button class="btn-number" id="6">6</button></td>
+                                <td><button class="btn-operator" id="-">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn-number" id="1">1</button></td>
+                                <td><button class="btn-number" id="2">2</button></td>
+                                <td><button class="btn-number" id="3">3</button></td>
+                                <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn-number" id="(">(</button></td>
+                                <td><button class="btn-number" id="0">0</button></td>
+                                <td><button class="btn-number" id=")">)</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="foot-box"></div>
-    <div class="graphic-element"></div>
     <!-- <a href="https://www.freepik.com/free-vector/seamless-gold-rhombus-grid-pattern-black-background_13312322.htm#query=geometric%20background%20black&position=8&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik -->
     <!-- <a href="https://www.freepik.com/free-vector/3d-icosahedron-cube-black-background-vector_25522556.htm#query=geometry%20technology&position=48&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik -->
     <script src="js/script.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 </html>
