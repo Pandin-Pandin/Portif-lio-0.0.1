@@ -1,6 +1,6 @@
 .second-big-box {
-    height: 100vh;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,6 @@
     margin-bottom: 30px;
     min-height: 73px;
     max-height: 73px;
-    border: 1px solid white;
 }
 
 .title-box-projects p {
@@ -38,12 +37,9 @@
 }
 
 .project-1 .title {
-    border: 1px solid white;
-}
-
-.test-box {
-    height: 100px;
-    border: 1px solid white;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width:910px) {

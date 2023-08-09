@@ -6,6 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-image: url('../img/universe-bg.png');
     background-size: cover;
     z-index: -1;
@@ -13,6 +14,8 @@ body {
 
 .box-adjust {
     height: 50px;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 white;
 }
 
 a.button-top {
